@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+  "setuptools>=61.0",
+  "skyfield"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyfield_observers"
+version = "0.0.1"
+authors = [
+  {
+    name = "Gerry Ma",
+    email = "gerry.y.ma@gmail.com"
+  }
+]
+description = "Ephem-style observers for Skyfield"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
