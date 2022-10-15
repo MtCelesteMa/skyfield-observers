@@ -9,10 +9,7 @@ build-backend = "setuptools.build_meta"
 name = "skyfield_observers"
 version = "0.0.1"
 authors = [
-  {
-    name = "Gerry Ma",
-    email = "gerry.y.ma@gmail.com"
-  }
+  { name = "Gerry Ma", email = "gerry.y.ma@gmail.com" }
 ]
 description = "Ephem-style observers for Skyfield"
 readme = "README.md"

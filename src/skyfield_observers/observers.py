@@ -12,7 +12,7 @@ class Observer:
         self.set_location(lat, lon, elev)
 
         self.ts = skyfield.api.load.timescale()
-        self.t = ts.now()
+        self.t = self.ts.now()
 
     def set_location(self, lat=0.0, lon=0.0, elev=0.0):
         self.loc = self.eph['earth'] + skyfield.api.wgs84.latlon(lat, lon, elev)
