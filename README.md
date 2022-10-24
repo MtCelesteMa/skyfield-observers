@@ -40,3 +40,15 @@ alt, az, distance = sun_pos.apparent().altaz()
 # Print sun position
 print('Altitude: {alt:.2f}, Azimuth: {az:.2f}'.format(alt=alt.degrees, az=az.degrees))
 ```
+
+Calculate the time and azimuth of sunrise on 2020/01/01:
+```python
+# Calculate sunrise time and position
+r_times, r_positions = obs.previous_risings(eph['sun'], radius=0.25)
+r_time, r_position = r_times[0], r_positions[0]
+r_dt = r_time.astimezone(tz)
+alt, az, distance = r_position.apparent().altaz()
+
+# Print sunrise time and position
+print('Sunrise: {r_time} (Azimuth: {az:.2f})'.format(r_time=r_dt, az=az.degrees))
+```
